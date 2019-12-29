@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <style>
+      div#box1 {
+        background: #9dceff;
+        width: 400px;
+        height: 200px;
+      }
+    </style>
+
+    <script>
+      function changeBG(el, clr) {
+        var elem = document.getElementById(el);
+        elem.style.transition = "background 1.0s linear 0s";
+        elem.style.background = clr;
+      }
+    </script>
+
+    <button onclick="changeBG('box1','#F0F')">Magenta</button>
+    <button onclick="changeBG('box1','#0C0')">Green</button>
+    <button onclick="changeBG('box1','#9DCEFF')">Origninal</button>
+  </br>
+    <br />
+
+    <div id="box1">Content in box 1 ...</div>
+  </body>
+</html>
